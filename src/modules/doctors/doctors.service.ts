@@ -1,23 +1,19 @@
 import { Injectable, NotAcceptableException } from '@nestjs/common';
-import { ConfigService } from '../config';
-import { JwtService } from '@nestjs/jwt';
 import { Doctor } from './doctor.entity';
-import { User, UserFillableFields } from '../user';
+import { UserFillableFields } from '../user';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
-import { UpdateDoctorPayload } from './UpdateDoctor.payload';
+import { UpdateDoctorPayload } from './doctorsPayload/UpdateDoctor.payload';
 
 @Injectable()
 export class DoctorsService {
   constructor(
     @InjectRepository(Doctor)
     private readonly doctorRepository: Repository<Doctor>,
-    private readonly jwtService: JwtService,
-    private readonly configService: ConfigService,
   ) {}
 
-  private readonly doctor: Doctor[] = [];
-  async get(id: number) {
+  protected readonly doctor: Doctor[] = [];
+  async get(id: string) {
     return this.doctorRepository.findOne(id);
   }
 
@@ -52,7 +48,7 @@ export class DoctorsService {
 
     if (!user) {
       throw new NotAcceptableException(
-        'no such user',
+        'no such userPayload',
       );
     }
      await this.doctorRepository.update(id, updateDoctor);
@@ -65,7 +61,7 @@ export class DoctorsService {
 
     if (!user) {
       throw new NotAcceptableException(
-        'no such user',
+        'no such userPayload',
       );
     }
      await this.doctorRepository.softDelete(id);

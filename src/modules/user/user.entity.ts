@@ -3,9 +3,10 @@ import {
   Column,
   PrimaryGeneratedColumn,
   CreateDateColumn,
-  UpdateDateColumn, TableInheritance, DeleteDateColumn,
+  UpdateDateColumn, TableInheritance, DeleteDateColumn, OneToMany,
 } from 'typeorm';
 import { PasswordTransformer } from './password.transformer';
+import { Comment } from '../comments/comment.entity';
 
 @Entity({
   name: 'users',
@@ -45,6 +46,9 @@ export class User {
     const { password, ...self } = this;
     return self;
   }
+
+  @OneToMany(() => Comment, comment => comment.commentedOn)
+  comments: Comment[];
 }
 
 export class UserFillableFields {

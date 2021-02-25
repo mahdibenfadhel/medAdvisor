@@ -3,9 +3,10 @@ import {
   Column,
   PrimaryGeneratedColumn,
   CreateDateColumn,
-  UpdateDateColumn, ChildEntity,
+  UpdateDateColumn, ChildEntity, OneToMany,
 } from 'typeorm';
 import { PasswordTransformer, User } from '../user';
+import { Comment } from '../comments/comment.entity';
 
 @ChildEntity()
 export class Doctor extends User {

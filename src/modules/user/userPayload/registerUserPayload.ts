@@ -2,14 +2,15 @@ import { ApiProperty } from '@nestjs/swagger';
 import { IsEmail, IsNotEmpty, MinLength } from 'class-validator';
 import { Unique } from 'modules/common';
 import { SameAs } from 'modules/common/validator/same-as.validator';
-import { Doctor } from './doctor.entity';
+import { User } from '../user.entity';
 
-export class RegisterDoctorPayload {
+
+export class RegisterUserPayload {
   @ApiProperty({
     required: true,
   })
   @IsEmail()
-  @Unique([Doctor])
+  @Unique([User])
   email: string;
 
   @ApiProperty({
@@ -46,6 +47,14 @@ export class RegisterDoctorPayload {
     required: true,
   })
   @IsNotEmpty()
+
+  @ApiProperty({
+    required: true,
+  })
+  @IsNotEmpty()
+  type: string;
+
+
   facility: string;
   @ApiProperty({
     required: true,

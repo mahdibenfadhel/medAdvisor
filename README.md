@@ -1,4 +1,4 @@
-<h1>NestJS Boilerplate
+<h1>NestJS
   <a
     href="http://nestjs.com/"
     target="blank"
@@ -13,16 +13,15 @@
 
 ## Description
 
-[NestJS](https://github.com/nestjs/nest) Boilerplate made with ❤️ by [💡VivifyIdeas💡](https://www.vivifyideas.com).
+medAdvisor by TouchLink
 
 ## Start Guide
 
 ### Outside Docker containers
 
 - Create .env file `cp .env.example .env` and replace existing env variables
-  (mysql/mariadb connection params)
-- Install dependencies `yarn`
-- Start the app `yarn start` (app will be exposed through the port 3000)
+- Install dependencies `npm install`
+- Start the app `npm start` (app will be exposed through the port 3000)
 
 ### Inside Docker containers
 
@@ -85,9 +84,3 @@ and read all environment variables from `.env` file, which is created automatica
 RESTful APIs you can describe with already integrated Swagger.
 To see all available endpoints visit http://localhost/api/docs
 
-## Authentication - JWT
-
-Already preconfigured JWT authentication.
-It's suggested to change current password hashing to something more secure.
-You can start use already working implementation of `Login` and `Registration`
-endpoints, just take a look at [http://localhost/api/docs](http://localhost/api/docs).

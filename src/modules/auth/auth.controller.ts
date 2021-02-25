@@ -11,7 +11,7 @@ import { AuthGuard } from '@nestjs/passport';
 import { AuthService, LoginPayload, RegisterPayload } from './';
 import { UsersService } from './../user';
 import { DoctorsService } from '../doctors/doctors.service';
-import { RegisterDoctorPayload } from '../doctors/registerDoctor.payload';
+import { RegisterDoctorPayload } from '../doctors/doctorsPayload/registerDoctor.payload';
 
 @Controller('api/auth')
 @ApiTags('authentication')

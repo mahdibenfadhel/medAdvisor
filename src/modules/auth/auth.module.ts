@@ -33,6 +33,6 @@ import { DoctorsModule } from '../doctors/doctors.module';
   ],
   controllers: [AuthController],
   providers: [AuthService, JwtStrategy],
-  exports: [PassportModule.register({ defaultStrategy: 'jwt' })],
+  exports: [PassportModule.register({ defaultStrategy: 'jwt' }), AuthService],
 })
 export class AuthModule {}

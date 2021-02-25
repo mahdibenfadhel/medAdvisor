@@ -1,17 +1,16 @@
-import { forwardRef, Module } from '@nestjs/common';
-import { DoctorsController } from './doctors.controller';
-import { DoctorsService } from './doctors.service';
+import { Module } from '@nestjs/common';
+import { TypeOrmModule } from '@nestjs/typeorm';
+import { AgencyService } from './agency.service';
+import { AgencyController } from './agency.controller';
+import { Agency } from './agency.entity';
 import { UserModule } from '../user';
 import { ConfigModule, ConfigService } from '../config';
-import { JwtModule } from '@nestjs/jwt';
 import { PassportModule } from '@nestjs/passport';
-import { Doctor } from './doctor.entity';
-import { TypeOrmModule } from '@nestjs/typeorm';
-import { AuthService, JwtStrategy } from '../auth';
+import { JwtModule } from '@nestjs/jwt';
+import { AuthModule, AuthService, JwtStrategy } from '../auth';
 
 @Module({
-  imports: [
-    TypeOrmModule.forFeature([Doctor]),
+  imports: [TypeOrmModule.forFeature([Agency]),
     UserModule,
     ConfigModule,
     PassportModule.register({ defaultStrategy: 'jwt' }),
@@ -30,10 +29,7 @@ import { AuthService, JwtStrategy } from '../auth';
         };
       },
       inject: [ConfigService],
-    }),
-  ],
-  controllers: [DoctorsController],
-  providers: [DoctorsService, AuthService, JwtStrategy],
-  exports: [DoctorsService],
-})
-export class DoctorsModule {}
+    })],
+  providers: [AgencyService, JwtStrategy, AuthService],
+  controllers: [AgencyController]
+})export class AgencyModule {}

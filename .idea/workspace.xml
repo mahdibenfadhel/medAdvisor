@@ -2,138 +2,69 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f85738d-e932-4f1e-a841-297a1feebbf5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/doctors/UpdateDoctor.payload.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/doctors/doctor.entity.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/doctors/registerDoctor.payload.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpack-hmr.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLinters/eslint.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/medAdvisorBackEnd.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/agency/agency.controller.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/agency/agency.controller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/agency/agency.entity.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/agency/agency.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/agency/agency.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/agency/agency.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/comments/comment.entity.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/comments/comments.controller.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/comments/comments.controller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/comments/comments.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/comments/comments.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/comments/comments.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/comments/commentsPayload/createCommentPayload.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/hospitals/hospital.entity.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/hospitals/hospitals.controller.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/hospitals/hospitals.controller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/hospitals/hospitals.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/hospitals/hospitals.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/hospitals/hospitals.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/laboratory/laboratory.controller.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/laboratory/laboratory.controller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/laboratory/laboratory.entity.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/laboratory/laboratory.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/laboratory/laboratory.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/laboratory/laboratory.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/patients/patient.entity.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/patients/patients.controller.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/patients/patients.controller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/patients/patients.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/patients/patients.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/patients/patients.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/user/user.controller.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/user/user.controller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/user/userPayload/registerUserPayload.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ormconfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/ormconfig.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/auth/auth.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/auth/auth.controller.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/auth/auth.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/auth/auth.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/auth/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/auth/auth.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/auth/jwt.strategy.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/auth/jwt.strategy.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/doctors/UpdateDoctor.payload.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/doctors/doctorsPayload/UpdateDoctor.payload.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/doctors/doctor.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/doctors/doctor.entity.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/doctors/doctors.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/doctors/doctors.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/doctors/doctors.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/doctors/doctors.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/doctors/doctors.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/doctors/doctors.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/doctors/registerDoctor.payload.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/doctors/doctorsPayload/registerDoctor.payload.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/main/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/main/app.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/user/user.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/user/user.entity.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/user/user.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/user/user.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/user/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/user/user.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/swagger/constants.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/swagger/constants.ts" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/.tmp/" />
-    <ignored path="$PROJECT_DIR$/temp/" />
-    <ignored path="$PROJECT_DIR$/tmp/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/modules/auth/auth.service.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
-              <folding>
-                <element signature="e#0#67#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/modules/doctors/doctors.service.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
-              <folding>
-                <element signature="e#0#68#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/modules/auth/auth.module.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
-              <folding>
-                <element signature="e#0#40#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/modules/doctors/registerDoctor.payload.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="644">
-              <caret line="32" selection-start-line="32" selection-end-line="32" />
-              <folding>
-                <element signature="e#0#46#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/modules/doctors/doctor.entity.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/init">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-382" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/modules/doctors/UpdateDoctor.payload.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
-              <folding>
-                <element signature="e#0#46#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/modules/doctors/doctors.service.spec.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#54#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -144,6 +75,11 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -173,11 +109,15 @@
       </list>
     </option>
   </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="676" />
     <option name="width" value="697" />
     <option name="height" value="735" />
   </component>
+  <component name="ProjectId" id="1ovISBI4yzxNLmx99D5Pokk8R0R" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -200,37 +140,44 @@
       </pane>
     </panes>
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/modules/main" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="C:\Users\mahdi\Desktop\touchLink\medAdvisor\backoffice\medAdvisorBackOffice\node_modules\eslint" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\mahdi\Desktop\touchLink\medAdvisor\backoffice\medAdvisorBackOffice\node_modules\prettier" />
-    <property name="ts.external.directory.path" value="C:\Users\mahdi\Desktop\touchLink\medAdvisor\backoffice\medAdvisorBackOffice\node_modules\typescript\lib" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="ts.external.directory.path" value="C:\Users\Med Mahdi ben Fadhl\Desktop\TouchLink\dev\medAdvisor\medAdvisorBackEnd\node_modules\typescript\lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Med Mahdi ben Fadhl\Desktop\TouchLink\dev\medAdvisor\medAdvisorBackEnd\src\modules\main" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Med Mahdi ben Fadhl\Desktop\TouchLink\dev\medAdvisor\medAdvisorBackEnd\src\modules\user" />
+      <recent name="C:\Users\Med Mahdi ben Fadhl\Desktop\TouchLink\dev\medAdvisor\medAdvisorBackEnd\src\modules\common" />
+      <recent name="C:\Users\Med Mahdi ben Fadhl\Desktop\TouchLink\dev\medAdvisor\medAdvisorBackEnd\src\modules" />
+      <recent name="C:\Users\Med Mahdi ben Fadhl\Desktop\TouchLink\dev\medAdvisor\medAdvisorBackEnd\src\modules\doctors\doctorsPayload" />
       <recent name="C:\Users\mahdi\Desktop\touchLink\medAdvisor\backoffice\medAdvisorBackOffice" />
-      <recent name="C:\Users\mahdi\Desktop\touchLink\medAdvisor\backoffice\medAdvisorBackOffice\src" />
-      <recent name="C:\Users\mahdi\Desktop\touchLink\medAdvisor\backoffice\medAdvisorBackOffice\src\modules" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -248,6 +195,9 @@
       <workItem from="1613992724355" duration="4360000" />
       <workItem from="1614020689059" duration="57000" />
       <workItem from="1614092225602" duration="519000" />
+      <workItem from="1614160639993" duration="3973000" />
+      <workItem from="1614164813330" duration="6767000" />
+      <workItem from="1614175079926" duration="12591000" />
     </task>
     <servers />
   </component>
@@ -281,7 +231,26 @@
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.env.example">

@@ -9,6 +9,7 @@ const {
   DB_PASSWORD,
   DB_PORT,
   DB_DATABASE,
+  DB_SYNC,
 } = process.env;
 
 module.exports = {
@@ -18,6 +19,7 @@ module.exports = {
   username: DB_USERNAME,
   password: DB_PASSWORD,
   database: DB_DATABASE,
+  synchronize: DB_SYNC,
   migrations: [__dirname + '/src/migrations/*{.ts,.js}'],
   entities: [__dirname + '/src/**/*.entity.{ts,js}'],
 };

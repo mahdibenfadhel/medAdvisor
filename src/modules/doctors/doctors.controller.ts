@@ -7,23 +7,20 @@ import {
   Request,
   UseGuards,
   Param,
-  Query,
-  ParseIntPipe,
   Delete,
 } from '@nestjs/common';
 import { DoctorsService } from './doctors.service';
-import { ApiResponse, ApiTags, ApiBearerAuth, ApiQuery, ApiParam } from '@nestjs/swagger';
+import { ApiResponse, ApiTags, ApiBearerAuth, ApiParam } from '@nestjs/swagger';
 import { AuthGuard } from '@nestjs/passport';
-import { RegisterDoctorPayload } from './registerDoctor.payload';
-import { UpdateDoctorPayload } from './UpdateDoctor.payload';
-import { UsersService } from '../user';
+import { RegisterDoctorPayload } from './doctorsPayload/registerDoctor.payload';
+import { UpdateDoctorPayload } from './doctorsPayload/UpdateDoctor.payload';
 import { AuthService } from '../auth';
 
 @Controller('doctors')
 @ApiTags('doctors')
 export class DoctorsController {
-  constructor(private doctorService: DoctorsService,
-  private userService: UsersService,
+  constructor(
+    private doctorService: DoctorsService,
   private authService: AuthService,) {}
 
   @Post()

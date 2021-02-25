@@ -1,18 +1,20 @@
 import { Module } from '@nestjs/common';
+import { CommentsService } from './comments.service';
+import { CommentsController } from './comments.controller';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { User } from './user.entity';
-import { UsersService } from './user.service';
-import { UserController } from './user.controller';
-import {  AuthService } from '../auth';
+import { Comment } from './comment.entity';
 import { PassportModule } from '@nestjs/passport';
-import { ConfigModule, ConfigService } from '../config';
 import { JwtModule } from '@nestjs/jwt';
+import { ConfigModule, ConfigService } from '../config';
+import { AuthService, JwtStrategy } from '../auth';
+import { UserModule } from '../user';
+import { DoctorsModule } from '../doctors/doctors.module';
 
 @Module({
-  imports: [
-    TypeOrmModule.forFeature([User]),
-    UserModule,
+  imports:[TypeOrmModule.forFeature([Comment]),
     ConfigModule,
+    DoctorsModule,
+    UserModule,
     PassportModule.register({ defaultStrategy: 'jwt' }),
     JwtModule.registerAsync({
       imports: [ConfigModule],
@@ -29,10 +31,8 @@ import { JwtModule } from '@nestjs/jwt';
         };
       },
       inject: [ConfigService],
-    }),
-  ],
-  exports: [UsersService],
-    providers: [UsersService],
-  controllers: [UserController],
+    })],
+  providers: [CommentsService, JwtStrategy, AuthService],
+  controllers: [CommentsController]
 })
-export class UserModule {}
+export class CommentsModule {}

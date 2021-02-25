@@ -2,7 +2,8 @@ import { Injectable, NotAcceptableException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 
-import { User, UserFillableFields } from './user.entity';
+import { User } from './user.entity';
+import { RegisterUserPayload } from './userPayload/registerUserPayload';
 
 @Injectable()
 export class UsersService {
@@ -11,7 +12,7 @@ export class UsersService {
     private readonly userRepository: Repository<User>,
   ) {}
 
-  async get(id: number) {
+  async get(id: string) {
     return this.userRepository.findOne(id);
   }
 
@@ -23,7 +24,7 @@ export class UsersService {
       .getOne();
   }
 
-  async create(payload: UserFillableFields) {
+  async create(payload: RegisterUserPayload) {
     const user = await this.getByEmail(payload.email);
 
     if (user) {
@@ -32,7 +33,27 @@ export class UsersService {
       );
     }
 
-    return await this.userRepository.save(this.userRepository.create(payload));
+    return await this.userRepository
+      .createQueryBuilder('users')
+      .where('users.email = :email')
+      .setParameter('email', 'email')
+      .getOne();
   }
+
+  async findAll(): Promise<User[]> {
+    return this.userRepository.find();
+  }
+  async deleteUser(id) {
+    const user = await this.get(id);
+
+    if (!user) {
+      throw new NotAcceptableException(
+        'no such user',
+      );
+    }
+    await this.userRepository.softDelete(id);
+    return { success: true };
+  }
+
 
 }
