@@ -3,14 +3,9 @@ import {
   Column,
   PrimaryGeneratedColumn,
   CreateDateColumn,
-  UpdateDateColumn, TableInheritance, DeleteDateColumn, OneToMany, ManyToOne,
+  UpdateDateColumn, DeleteDateColumn, ManyToOne,
 } from 'typeorm';
 import { User } from '../user';
-import { Doctor } from '../doctors/doctor.entity';
-import { Laboratory } from '../laboratory/laboratory.entity';
-import { Agency } from '../agency/agency.entity';
-import { Hospital } from '../hospitals/hospital.entity';
-import { Patient } from '../patients/patient.entity';
 
 @Entity({
   name: 'comments',

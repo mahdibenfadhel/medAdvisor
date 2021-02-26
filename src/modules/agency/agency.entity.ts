@@ -3,21 +3,23 @@ import {
   ChildEntity, OneToMany,
 } from 'typeorm';
 import {  User } from '../user';
-import { Comment } from '../comments/comment.entity';
+import { Doctor } from '../doctors/doctor.entity';
+import { Offer } from '../offer/offer.entity';
 
 @ChildEntity()
 export class Agency extends User {
 
   @Column({ length: 255})
-  address: string;
+  description: string;
 
+  @Column({ length: 255})
+  documents: string;
+
+  @OneToMany(() => Doctor, doctor => doctor.agency)
+  doctors: Doctor[];
+
+  @OneToMany(() => Offer, offer => offer.agency)
+  offers: Offer[];
 
 }
 
-export class AgencyFillableFields {
-  firstName: string;
-  lastName: string;
-  address: string;
-  email: string;
-  password: string;
-}

@@ -3,7 +3,6 @@ import { ApiBearerAuth, ApiParam, ApiResponse, ApiTags } from '@nestjs/swagger';
 import { CommentsService } from './comments.service';
 import { CreateCommentPayload } from './commentsPayload/createCommentPayload';
 import { AuthGuard } from '@nestjs/passport';
-import { UpdateDoctorPayload } from '../doctors/doctorsPayload/UpdateDoctor.payload';
 
 @Controller('comments')
 @ApiTags('comments')

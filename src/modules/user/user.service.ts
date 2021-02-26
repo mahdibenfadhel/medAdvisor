@@ -3,7 +3,6 @@ import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 
 import { User } from './user.entity';
-import { RegisterUserPayload } from './userPayload/registerUserPayload';
 
 @Injectable()
 export class UsersService {
@@ -24,7 +23,7 @@ export class UsersService {
       .getOne();
   }
 
-  async create(payload: RegisterUserPayload) {
+  async create(payload: any) {
     const user = await this.getByEmail(payload.email);
 
     if (user) {

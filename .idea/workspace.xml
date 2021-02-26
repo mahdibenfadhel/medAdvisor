@@ -1,65 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2f85738d-e932-4f1e-a841-297a1feebbf5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jsLinters/eslint.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/medAdvisorBackEnd.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/agency/agency.controller.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/agency/agency.controller.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/agency/agency.entity.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/agency/agency.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/agency/agency.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/agency/agency.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/comments/comment.entity.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/comments/comments.controller.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/comments/comments.controller.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/comments/comments.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/comments/comments.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/comments/comments.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/comments/commentsPayload/createCommentPayload.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/hospitals/hospital.entity.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/hospitals/hospitals.controller.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/hospitals/hospitals.controller.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/hospitals/hospitals.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/hospitals/hospitals.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/hospitals/hospitals.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/laboratory/laboratory.controller.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/laboratory/laboratory.controller.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/laboratory/laboratory.entity.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/laboratory/laboratory.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/laboratory/laboratory.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/laboratory/laboratory.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/patients/patient.entity.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/patients/patients.controller.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/patients/patients.controller.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/patients/patients.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/patients/patients.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/patients/patients.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/user/user.controller.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/user/user.controller.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/user/userPayload/registerUserPayload.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
+    <list default="true" id="2f85738d-e932-4f1e-a841-297a1feebbf5" name="Default Changelist" comment="create all entities with swagger documentation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ormconfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/ormconfig.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/agency/agency.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/agency/agency.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/agency/agency.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/agency/agency.entity.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/agency/agency.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/agency/agency.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/auth/auth.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/auth/auth.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/auth/auth.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/auth/auth.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/auth/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/auth/auth.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/auth/jwt.strategy.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/auth/jwt.strategy.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/doctors/UpdateDoctor.payload.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/doctors/doctorsPayload/UpdateDoctor.payload.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/auth/authPayload/registerUserPayload.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/auth/authPayload/registerUserPayload.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/comments/comment.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/comments/comment.entity.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/comments/comments.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/comments/comments.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/common/enum/userTypes.enum.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/common/enum/userTypes.enum.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/doctors/doctor.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/doctors/doctor.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/doctors/doctors.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/doctors/doctors.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/doctors/doctors.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/doctors/doctors.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/doctors/doctors.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/doctors/doctors.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/doctors/registerDoctor.payload.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/doctors/doctorsPayload/registerDoctor.payload.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/hospitals/hospital.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/hospitals/hospital.entity.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/laboratory/laboratory.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/laboratory/laboratory.entity.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/main/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/main/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/offer/offer.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/offer/offer.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/offer/offer.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/offer/offer.entity.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/offer/offer.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/offer/offer.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/offer/offer.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/offer/offer.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/offer/offerPayload/offerPayload.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/offer/offerPayload/offerPayload.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/patients/patient.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/patients/patient.entity.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/products/product.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/products/product.entity.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/products/productPayload/productPayload.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/products/productPayload/productPayload.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/products/products.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/products/products.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/products/products.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/products/products.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/products/products.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/products/products.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/user/user.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/user/user.entity.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/user/user.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/user/user.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/user/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/user/user.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/swagger/constants.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/swagger/constants.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,11 +141,11 @@
       <recent name="C:\Users\Med Mahdi ben Fadhl\Desktop\TouchLink\dev\medAdvisor\medAdvisorBackEnd\src\modules\main" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Med Mahdi ben Fadhl\Desktop\TouchLink\dev\medAdvisor\medAdvisorBackEnd\src\modules\auth\authPayload" />
       <recent name="C:\Users\Med Mahdi ben Fadhl\Desktop\TouchLink\dev\medAdvisor\medAdvisorBackEnd\src\modules\user" />
       <recent name="C:\Users\Med Mahdi ben Fadhl\Desktop\TouchLink\dev\medAdvisor\medAdvisorBackEnd\src\modules\common" />
       <recent name="C:\Users\Med Mahdi ben Fadhl\Desktop\TouchLink\dev\medAdvisor\medAdvisorBackEnd\src\modules" />
       <recent name="C:\Users\Med Mahdi ben Fadhl\Desktop\TouchLink\dev\medAdvisor\medAdvisorBackEnd\src\modules\doctors\doctorsPayload" />
-      <recent name="C:\Users\mahdi\Desktop\touchLink\medAdvisor\backoffice\medAdvisorBackOffice" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -197,7 +168,7 @@
       <workItem from="1614092225602" duration="519000" />
       <workItem from="1614160639993" duration="3973000" />
       <workItem from="1614164813330" duration="6767000" />
-      <workItem from="1614175079926" duration="12591000" />
+      <workItem from="1614175079926" duration="27347000" />
     </task>
     <servers />
   </component>
@@ -247,6 +218,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="create all entities with swagger documentation" />
+    <option name="LAST_COMMIT_MESSAGE" value="create all entities with swagger documentation" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

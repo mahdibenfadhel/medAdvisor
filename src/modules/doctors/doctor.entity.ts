@@ -1,12 +1,9 @@
 import {
-  Entity,
   Column,
-  PrimaryGeneratedColumn,
-  CreateDateColumn,
-  UpdateDateColumn, ChildEntity, OneToMany,
+ ChildEntity, ManyToOne,
 } from 'typeorm';
-import { PasswordTransformer, User } from '../user';
-import { Comment } from '../comments/comment.entity';
+import {  User } from '../user';
+import { Agency } from '../agency/agency.entity';
 
 @ChildEntity()
 export class Doctor extends User {
@@ -19,8 +16,17 @@ export class Doctor extends User {
 
 
   @Column({ length: 255 })
-  speciality: string;
+  spokenLanguages: string;
 
+
+  @Column({ length: 255 })
+  experience: string;
+
+  @Column({ length: 255 })
+  education: string;
+
+  @Column({ length: 255 })
+  speciality: string;
 
   @Column({ length: 255 })
   facility: string;
@@ -28,16 +34,12 @@ export class Doctor extends User {
   @Column({default: 0})
   rating: number;
 
+  @Column({ length: 255})
+  documents: string;
+
+  @ManyToOne(() => Agency, agency => agency.doctors)
+  agency: Agency;
+
 }
 
-export class DoctorFillableFields {
-  firstName: string;
-  lastName: string;
-  email: string;
-  speciality: string;
-  birthday: Date;
-  description: string;
-  facility: string;
-  rating: number;
-  password: string;
-}
+

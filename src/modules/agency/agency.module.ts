@@ -7,7 +7,7 @@ import { UserModule } from '../user';
 import { ConfigModule, ConfigService } from '../config';
 import { PassportModule } from '@nestjs/passport';
 import { JwtModule } from '@nestjs/jwt';
-import { AuthModule, AuthService, JwtStrategy } from '../auth';
+import { AuthService, JwtStrategy } from '../auth';
 
 @Module({
   imports: [TypeOrmModule.forFeature([Agency]),

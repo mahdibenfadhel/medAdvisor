@@ -32,6 +32,9 @@ export class User {
   })
   password: string;
 
+  @Column({ length: 255})
+  address: string;
+
   @CreateDateColumn()
   created!: Date;
 
@@ -55,9 +58,15 @@ export class UserFillableFields {
   firstName: string;
   lastName: string;
   email: string;
+  address: string;
   speciality: string;
+  spokenLanguages: string;
+  experience: string;
+  education: string;
+  profilePic: string;
   birthday: String;
   description: string;
+  documents: string;
   facility: string;
   rating: number;
   password: string;

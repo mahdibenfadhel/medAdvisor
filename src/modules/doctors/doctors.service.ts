@@ -4,6 +4,7 @@ import { UserFillableFields } from '../user';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { UpdateDoctorPayload } from './doctorsPayload/UpdateDoctor.payload';
+import { RegisterDoctorPayload } from './doctorsPayload/registerDoctor.payload';
 
 @Injectable()
 export class DoctorsService {
@@ -26,7 +27,7 @@ export class DoctorsService {
   }
 
 
-  async create(payload: UserFillableFields) {
+  async create(payload: RegisterDoctorPayload) {
 
     const user = await this.getByEmail(payload.email);
 

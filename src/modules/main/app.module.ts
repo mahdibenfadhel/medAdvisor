@@ -6,11 +6,13 @@ import { ConfigModule, ConfigService } from 'modules/config';
 import { AuthModule } from 'modules/auth';
 import { CommonModule } from 'modules/common';
 import { DoctorsModule } from '../doctors/doctors.module';
-import { Patient } from '../patients/patient.entity';
 import { PatientsModule } from '../patients/patients.module';
 import { CommentsModule } from '../comments/comments.module';
 import { LaboratoryModule } from '../laboratory/laboratory.module';
 import { AgencyModule } from '../agency/agency.module';
+import { HospitalsModule } from '../hospitals/hospitals.module';
+import { ProductsModule } from '../products/products.module';
+import { OfferModule } from '../offer/offer.module';
 
 @Module({
   imports: [
@@ -36,7 +38,10 @@ import { AgencyModule } from '../agency/agency.module';
     CommentsModule,
     PatientsModule,
     LaboratoryModule,
-    AgencyModule
+    AgencyModule,
+    HospitalsModule,
+    ProductsModule,
+    OfferModule,
   ],
   controllers: [AppController],
   providers: [AppService],

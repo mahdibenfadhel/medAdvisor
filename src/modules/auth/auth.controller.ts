@@ -8,17 +8,14 @@ import {
 } from '@nestjs/common';
 import { ApiResponse, ApiTags, ApiBearerAuth } from '@nestjs/swagger';
 import { AuthGuard } from '@nestjs/passport';
-import { AuthService, LoginPayload, RegisterPayload } from './';
-import { UsersService } from './../user';
-import { DoctorsService } from '../doctors/doctors.service';
-import { RegisterDoctorPayload } from '../doctors/doctorsPayload/registerDoctor.payload';
+import { AuthService, LoginPayload } from './';
+import { RegisterUserPayload } from './authPayload/registerUserPayload';
 
 @Controller('api/auth')
 @ApiTags('authentication')
 export class AuthController {
   constructor(
     private readonly authService: AuthService,
-    private readonly doctorService: DoctorsService,
   ) {}
 
   @Post('login')
@@ -34,8 +31,8 @@ export class AuthController {
   @ApiResponse({ status: 201, description: 'Successful Registration' })
   @ApiResponse({ status: 400, description: 'Bad Request' })
   @ApiResponse({ status: 401, description: 'Unauthorized' })
-  async register(@Body() payload: RegisterDoctorPayload): Promise<any> {
-    const user = await this.doctorService.create(payload);
+  async register(@Body() payload: RegisterUserPayload): Promise<any> {
+    const user = await this.authService.create(payload);
     return await this.authService.createToken(user);
   }
 
