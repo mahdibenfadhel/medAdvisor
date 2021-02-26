@@ -2,8 +2,8 @@ import { ApiProperty } from '@nestjs/swagger';
 import { IsEmail, IsNotEmpty, MinLength } from 'class-validator';
 import { Unique } from 'modules/common';
 import { SameAs } from 'modules/common/validator/same-as.validator';
-import { User } from '../user.entity';
-
+import { User } from '../../user';
+import { UserTypes } from '../../common/enum/userTypes.enum';
 
 export class RegisterUserPayload {
   @ApiProperty({
@@ -20,6 +20,12 @@ export class RegisterUserPayload {
   firstName: string;
 
   @ApiProperty({
+    required: true,  enum: UserTypes, enumName: 'type'
+  })
+  @IsNotEmpty()
+  type: UserTypes;
+
+  @ApiProperty({
     required: true,
   })
   @IsNotEmpty()
@@ -27,40 +33,35 @@ export class RegisterUserPayload {
 
 
   @ApiProperty({
-    required: true,
+    required: false,
   })
-  @IsNotEmpty()
   speciality: string;
 
   @ApiProperty({
-    required: true,
+    required: false,
   })
-  @IsNotEmpty()
   birthday: string;
 
   @ApiProperty({
-    required: true,
+    required: false,
   })
-  @IsNotEmpty()
   description: string;
-  @ApiProperty({
-    required: true,
-  })
-  @IsNotEmpty()
 
   @ApiProperty({
-    required: true,
+    required: false,
   })
-  @IsNotEmpty()
-  type: string;
-
-
   facility: string;
+
   @ApiProperty({
-    required: true,
+    required: false,default: 0
   })
-  @IsNotEmpty()
   rating: number;
+
+  @ApiProperty({
+    required: false
+  })
+  address: string;
+
   @ApiProperty({
     required: true,
   })
@@ -71,4 +72,30 @@ export class RegisterUserPayload {
   @ApiProperty({ required: true })
   @SameAs('password')
   passwordConfirmation: string;
+
+  @ApiProperty({
+    required: false,
+  })
+  spokenLanguages: string;
+
+  @ApiProperty({
+    required: false,
+  })
+  experience: string;
+
+  @ApiProperty({
+    required: false,
+  })
+  education: string;
+
+  @ApiProperty({
+    required: false,
+  })
+  profilePic: string;
+
+  @ApiProperty({
+    required: false,
+  })
+  documents: string;
+  
 }
