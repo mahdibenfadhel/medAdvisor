@@ -2,35 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f85738d-e932-4f1e-a841-297a1feebbf5" name="Default Changelist" comment="create all entities with swagger documentation">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/agency/agency.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/agency/agency.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/agency/agency.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/agency/agency.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/agency/agency.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/agency/agency.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/auth/auth.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/auth/auth.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/auth/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/auth/auth.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/auth/authPayload/registerUserPayload.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/auth/authPayload/registerUserPayload.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/comments/comment.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/comments/comment.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/comments/comments.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/comments/comments.controller.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/common/enum/userTypes.enum.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/common/enum/userTypes.enum.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/doctors/doctor.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/doctors/doctor.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/doctors/doctors.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/doctors/doctors.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/hospitals/hospital.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/hospitals/hospital.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/laboratory/laboratory.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/laboratory/laboratory.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/main/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/main/app.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/offer/offer.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/offer/offer.controller.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/offer/offer.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/offer/offer.entity.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/offer/offer.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/offer/offer.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/offer/offer.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/offer/offer.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/offer/offerPayload/offerPayload.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/offer/offerPayload/offerPayload.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/patients/patient.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/patients/patient.entity.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/products/product.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/products/product.entity.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/products/productPayload/productPayload.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/products/productPayload/productPayload.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/products/products.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/products/products.controller.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/products/products.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/products/products.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/products/products.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/products/products.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/user/user.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/user/user.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/user/user.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/user/user.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/user/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/user/user.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,8 +151,16 @@
       <workItem from="1614092225602" duration="519000" />
       <workItem from="1614160639993" duration="3973000" />
       <workItem from="1614164813330" duration="6767000" />
-      <workItem from="1614175079926" duration="27347000" />
+      <workItem from="1614175079926" duration="27515000" />
     </task>
+    <task id="LOCAL-00001" summary="create all entities with swagger documentation">
+      <created>1614330747876</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1614330747876</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">

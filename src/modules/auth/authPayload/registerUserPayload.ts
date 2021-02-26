@@ -97,5 +97,5 @@ export class RegisterUserPayload {
     required: false,
   })
   documents: string;
-  
+
 }
